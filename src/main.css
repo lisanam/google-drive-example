@@ -18,6 +18,29 @@ body{
   height: 100%;
 }
 
+#update{
+  position: fixed;
+  z-index: 1;
+  top: 2em;
+  right: 2em;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px;
+  padding-left: 1em;
+  padding-right: 1em; 
+  font-family: Montserrat;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+  letter-spacing: 1px;
+  height: 2.5em;
+  font-size: 1em;
+}
+
 #gallery{
   display: flex;
   width: 100%;

@@ -5,6 +5,7 @@ import axios from "axios";
 
 //Components
 import Gallery from "./gallery/gallery";
+import Update from "./update";
 
 //Style
 import "./main.css";
@@ -41,6 +42,7 @@ class App extends React.Component {
   render() {
     return (
       <div id="app">
+        <Update/>
         <Gallery images={this.state.images}/>
       </div>
     )
