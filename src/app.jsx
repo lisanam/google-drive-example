@@ -22,17 +22,17 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    // this.getImages();
+    this.getImages(); //get images from Google Drive
   }
 
-  getImages() {
-    //retrieve images' metadata
-    axios.get('/public')
+  getImages() { //retrieve images' metadata
+    axios.get('/images')
     .then((res) => {
-      let images = res.images;
+      let images = res.data;
+      console.log(res)
       this.setState({
         images: images
-      })
+      });
     })
     .catch((err) => {
       console.log(err);

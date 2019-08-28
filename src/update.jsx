@@ -1,16 +1,9 @@
 //Libraries
 import React from "react";
-import axios from "axios";
 
 const Update = () => { 
   let clickHandler = () => {
-    axios.get("/update")
-      .then((res) => {
-        window.location.reload(true);
-      })
-      .catch((err) => {
-        console.log(err);
-      })
+    window.location.reload(true);
   }
 
   return (
