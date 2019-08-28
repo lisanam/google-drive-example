@@ -1,0 +1,48 @@
+{
+  "name": "bareminimum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "nodemon server/index.js",
+    "webpack": "webpack --watch",
+    "build": "webpack"
+  },
+  "engines": {
+    "node": "12.8.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lisanam/bareminimum.git"
+  },
+  "keywords": [
+    "react",
+    "node",
+    "express"
+  ],
+  "author": "Lisa Nam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lisanam/bareminimum/issues"
+  },
+  "homepage": "https://github.com/lisanam/bareminimum#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "node": "^12.9.0",
+    "path": "^0.12.7",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  }
+}
