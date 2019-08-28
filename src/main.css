@@ -1,0 +1,60 @@
+html {
+  height: 100%;
+}
+
+body{
+  height: 100%;
+}
+
+#root{
+  height: 100%;
+}
+
+#app{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#gallery{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+#gallery-artwork{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+img{
+  height: 60vh;
+  min-width: 500px;
+  object-fit: contain;
+}
+
+#gallery-curator{
+  display: flex;
+  position: absolute;
+  bottom: 10vh;
+  padding: 0;
+}
+
+.gallery-curator-dot{
+  cursor: pointer;
+  display: inline-block;
+  background: white;
+  border: solid 1px;
+  text-indent: -9990px;
+  transition: .3s;
+  border-radius: 10px;
+  width: .7em;
+  height: .7em;
+  margin: 0 5px;
+}

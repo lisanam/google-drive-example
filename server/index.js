@@ -12,7 +12,7 @@ const path = require('path');
 app.use('/scripts', express.static(path.join(__dirname, '..', 'node_modules')));
 
 //Serve public folder
-app.use(express.static(path.join(__dirname, '..', 'public'))); 
+app.use(express.static(path.join(__dirname, '..', 'public')));
 
 //Serve index.html at every other route that comes to server
 app.get('*', (req, res) => {
