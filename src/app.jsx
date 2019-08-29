@@ -28,14 +28,25 @@ class App extends React.Component {
   getImages() { //retrieve images' metadata
     axios.get('/images')
     .then((res) => {
-      let images = res.data;
-      console.log(res)
-      this.setState({
-        images: images
-      });
+      if(res.data === "GOOGLE_API_KEY is missing") { 
+        //if Google API Key is missing
+        window.alert("GOOGLE_API_KEY is missing in .env");
+      } else if(res.data === "FOLDER_ID is missing") {
+        //if folder id is missing
+        window.alert("FOLDER_ID is missing in .env");
+      } else { //Both GOOGLE_API_KEY & FOLDER_ID is there, so get images
+
+        let images = res.data;
+        this.setState({
+          images: images
+        });
+
+        //remove credit under sample images
+        document.getElementById("credit").style.display = "none";
+      }
     })
     .catch((err) => {
-      console.log(err);
+      console.log(err)
     });
   }
 

@@ -50,6 +50,7 @@ body{
 
 #gallery-artwork{
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   align-items: center;
@@ -60,6 +61,22 @@ img{
   height: 60vh;
   min-width: 500px;
   object-fit: contain;
+}
+
+#credit{
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  height: 2.5em;
+  font-size: 0.8em;
+  margin-top: 1em;
+}
+
+#credit a{
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 #gallery-curator{

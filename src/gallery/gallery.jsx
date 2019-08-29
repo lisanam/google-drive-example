@@ -43,7 +43,6 @@ class Gallery extends React.Component {
 
   render() { 
     let images = this.props.images; //images' metadata from google drive
-    console.log(images)
     this.length = images.length; //number of images
     let ind = this.state.ind; //index of image currently showing
     let loadedImg = this.state.loadedImg;

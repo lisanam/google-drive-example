@@ -23,9 +23,9 @@ app.get('/images', (req, res) => { //send private folder
   //for caching res.set("Cache-Control", "public, max-age=300, s-maxage=40000");
 
   //if api key is not there
-  if(!APIKey) res.sendStatus(404).send("GOOGLE_API_KEY is missing");
+  if(!APIKey) res.send("GOOGLE_API_KEY is missing");
   //if folder id is not there 
-  if(!folderId) res.sendStatus(404).send("Folder_Id is missing");
+  if(!folderId) res.send("FOLDER_ID is missing");
 
   //callback function after receiving images' metadata from Google Drive
   let callback = (images) => {

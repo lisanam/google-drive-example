@@ -1,5 +1,5 @@
 {
-  "name": "google-drive-demo",
+  "name": "google-drive-example",
   "version": "1.0.0",
   "description": "",
   "main": "server/index.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lisanam/google-drive-demo.git"
+    "url": "git+https://github.com/lisanam/google-drive-example.git"
   },
   "keywords": [
     "react",
@@ -24,9 +24,9 @@
   "author": "Lisa Nam",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lisanam/google-drive-demo/issues"
+    "url": "https://github.com/lisanam/google-drive-example/issues"
   },
-  "homepage": "https://github.com/lisanam/google-drive-demo#readme",
+  "homepage": "https://github.com/lisanam/google-drive-example#readme",
   "dependencies": {
     "axios": "^0.19.0",
     "dotenv": "^8.1.0",
